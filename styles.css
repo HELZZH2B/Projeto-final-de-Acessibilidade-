@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
+
+:root {
+    --cor-principal: #cee9f3;
+    --cor-secundaria: #5c43cb;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+}
+
+header {
+    background: #fff;
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.inicio-fundo {
+    background: url("img/4965007.jpg") right / cover no-repeat;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: auto;
+}
+
+.img-inicio {
+    position: absolute;
+    top: 18rem;
+    right: 0;
+    width: 45rem;
+    height: auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.botao-inicio {
+  position: absolute;
+  bottom: -100px;   
+  left: 61%;
+  transform: translateX(-50%);
+  background: var(--cor-principal);
+  border: none;
+  border-radius: 30px;
+  width: 14em;
+  height: 3em;
+  z-index: 2;
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--cor-principal);
+}
+
+#tropicalia {
+    margin: 3rem 0;
+    padding-top: 5rem;
+    position: relative;
+    background: url("img/flor.png") top right no-repeat,
+                url("img/flor-esquerda.png") bottom left no-repeat;
+    background-size: 180px 180px;
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: "Lemon", serif;
+    font-size: 2.5em;
+    color: var(--cor-principal);
+}
+
+#galeria {
+    background: #e2f5f8;
+}
+
+.fundo-galeria {
+    background: url("img/flor-bottom-direita.png") bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background: url("img/4965007.jpg") center/cover no-repeat;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario button {
+    background: var(--cor-secundaria);
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background: #F1EDEF;
+}
+
+/* Acessibilidade */
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: none;
+}
+
+#sakuraCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
